@@ -47,6 +47,7 @@ $$\theta = \left| \text{atan2}(C_y - B_y, C_x - B_x) - \text{atan2}(A_y - B_y, A
 Ensure you have Python 3.9+ installed along with the necessary library dependencies:
 ```bash
 pip install opencv-python mediapipe numpy matplotlib
+```
 
 ### Model Asset Setup
 1. Download the pre-trained model file: `pose_landmarker_full.task` from MediaPipe's official model distribution.
@@ -56,29 +57,16 @@ pip install opencv-python mediapipe numpy matplotlib
 Execute the pipeline via your terminal:
 ```bash
 python ccp_final_save.py
+```
 
 Press 'q' on the active video display window to stop processing, finish saving the recorded video, and render the evaluation charts.
 
 ### 📊 Empirical Evaluation Charts
 The execution outputs two core quantitative tracking subplots automatically saved to disk as ccp_assignment_evaluation_charts.png:
 
-Geometrical Joint Angles Fluctuation Chart: Tracks the exact degrees of the knee, hip, and elbow variations frame-by-frame to isolate transition milestones.
-
-Running Pipeline Accuracy Progression Curve: Visualizes real-time performance, showing brief dipping intervals at movement transition thresholds before stabilizing over sustained actions.
+* Geometrical Joint Angles Fluctuation Chart: Tracks the exact degrees of the knee, hip, and elbow variations frame-by-frame to isolate transition milestones.
+* Running Pipeline Accuracy Progression Curve: Visualizes real-time performance, showing brief dipping intervals at movement transition thresholds before stabilizing over sustained actions.
 
 🎥 Project Demo (How to View Video)
-To show your final processed video execution directly on your GitHub repository page, you can embed a looping demo snippet inside this README. Follow these instructions to upload it:
 
-Option A: Embed an Animated GIF (Recommended for Instant Autoplay)
-Convert your saved output_processed.mp4 file into an .gif file using an online converter or tool like ScreenToGif.
 
-Upload the .gif file to your repository (e.g., inside a folder named assets).
-
-View it immediately by displaying it below:
-
-Option B: Upload the Raw Video File
-Simply drag and drop your final output_processed.mp4 file directly into your GitHub repository file space via the web browser interface.
-
-Link it in your README so reviewers can click to view it natively:
-
-👉 Click here to watch the full Processed Execution Demo Video (output_processed.mp4)
