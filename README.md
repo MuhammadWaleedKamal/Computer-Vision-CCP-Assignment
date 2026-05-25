@@ -56,7 +56,7 @@ pip install opencv-python mediapipe numpy matplotlib
 ### Running the Project
 Execute the pipeline via your terminal:
 ```bash
-python ccp_final_save.py
+python exerciseclassificationcode.py
 ```
 
 Press 'q' on the active video display window to stop processing, finish saving the recorded video, and render the evaluation charts.
