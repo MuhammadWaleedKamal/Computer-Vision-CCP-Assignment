@@ -9,16 +9,16 @@ The system tracks algorithm performance by logging classification matches frame-
 
 ## 🚀 Key Features
 
-### 1. Pose Detection & Coordinate Smoothing (Task 1)
+### 1. Pose Detection & Coordinate Smoothing
 * Utilizes the modern **MediaPipe Tasks API** (`PoseLandmarker`) to extract 33 distinct skeletal keypoints.
 * Applies a custom **Temporal Moving Average Filter** with a window size of $5$ frames to eliminate sensor jitter and smooth coordinates across time.
 * Renders a real-time structural skeleton overlay with dynamic state color indications.
 
-### 2. Kinematic Joint Angle Tracking (Task 2)
+### 2. Kinematic Joint Angle Tracking
 * Dynamically computes three critical biological joint angles over time using vector calculus: **Left Knee Angle**, **Left Hip Angle**, and **Left Elbow Angle**.
 * Automatically exports a matplotlib evaluation visualization graphing angular fluctuations parallel to frame counts.
 
-### 3. Rule-Based Classification Engine (Task 3)
+### 3. Rule-Based Classification Engine 
 * Uses deterministic, multi-variable heuristic decision boundaries to classify structural poses.
 * Employs bilateral upper-limb spatial coordinate parsing to register arm-raising states across the vertical axis.
 * Generates a live running accuracy progression curve tracking predictive compliance against manually defined ground truth models.
