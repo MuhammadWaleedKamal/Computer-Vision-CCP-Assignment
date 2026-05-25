@@ -33,7 +33,7 @@ Joint angles ($\theta$) at any central vertex joint $B$ flanked by keypoints $A$
 $$\theta = \left| \text{atan2}(C_y - B_y, C_x - B_x) - \text{atan2}(A_y - B_y, A_x - B_x) \right| \times \frac{180}{\pi}$$
 
 ### Rule Threshold Decisions
-* **Squatting:** Triggered if lower-body extension compresses simultaneously: $\theta_{\text{knee}} < 130^\circ \text{ AND } \theta_{\text{hip}} < 105^\circ$.
+* **Squatting:** Triggered if lower-body extension compresses simultaneously: $\theta_{\text{knee}} < 170^\circ \text{ AND } \theta_{\text{hip}} < 135^\circ$.
 * **Raising Arm:** Triggered if a sequential vertical spatial stack is verified on either limb (where the wrist rises above the elbow, and the elbow sits above the shoulder line):
   $$\text{Arm Raised} = (Y_{\text{elbow}} < Y_{\text{shoulder}}) \land (Y_{\text{wrist}} < Y_{\text{elbow}})$$
   *(Note: In OpenCV, smaller pixel Y-values denote higher physical elevation on screen).*
