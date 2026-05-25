@@ -62,7 +62,7 @@ python exerciseclassificationcode.py
 Press 'q' on the active video display window to stop processing, finish saving the recorded video, and render the evaluation charts.
 
 ### 📊 Empirical Evaluation Charts
-The execution outputs two core quantitative tracking subplots automatically saved to disk as ccp_assignment_evaluation_charts.png:
+The execution outputs two core quantitative tracking subplots automatically saved to disk as evaluation_charts.png:
 
 * Geometrical Joint Angles Fluctuation Chart: Tracks the exact degrees of the knee, hip, and elbow variations frame-by-frame to isolate transition milestones.
 * Running Pipeline Accuracy Progression Curve: Visualizes real-time performance, showing brief dipping intervals at movement transition thresholds before stabilizing over sustained actions.
