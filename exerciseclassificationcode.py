@@ -1,3 +1,4 @@
+# The video is live recorded from webcam.
 import cv2
 import mediapipe as mp
 import numpy as np
