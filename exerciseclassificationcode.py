@@ -47,14 +47,14 @@ def get_angle(a, b, c):
     return int(angle)
 
 # Ground truth
-ground_truth = {
+GROUND_TRUTH_TIMELINE = {
     (1, 100): "Standing",
     (101, 300): "Raising Arm",
     (301, 500): "Squatting",
 }
 
 def get_ground_truth_activity(current_frame):
-    for (start, end), activity in ground_truth.items():
+    for (start, end), activity in GROUND_TRUTH_TIMELINE.items():
         if start <= current_frame <= end:
             return activity
         
