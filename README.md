@@ -1,3 +1,7 @@
+
+
+Uploading output_processed_file.mp4…
+
 # Real-Time Human Pose Tracking and Activity Classifier
 
 ## 📌 Project Overview
@@ -68,5 +72,5 @@ The execution outputs two core quantitative tracking subplots automatically save
 * Running Pipeline Accuracy Progression Curve: Visualizes real-time performance, showing brief dipping intervals at movement transition thresholds before stabilizing over sustained actions.
 
 🎥 Project Demo (How to View Video)
-
+* Go to output_processed_file.mp4
 
